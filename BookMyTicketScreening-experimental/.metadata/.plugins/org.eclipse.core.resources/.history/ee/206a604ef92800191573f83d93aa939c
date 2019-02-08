@@ -1,0 +1,7 @@
+package com.cg.bookmymovie.screeningservice.service;
+
+import com.cg.bookmymovie.screeningservice.ScreeningServiceApplication;
+
+public class ScreeningServiceImpl extends ScreeningServic{
+
+}

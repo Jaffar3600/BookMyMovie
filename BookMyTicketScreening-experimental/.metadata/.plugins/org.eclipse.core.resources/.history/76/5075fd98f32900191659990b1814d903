@@ -1,0 +1,64 @@
+package com.cg.bookmymovie.screeningservice.testService;
+
+import static org.junit.Assert.assertEquals;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.Ignore;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.cg.bookmymovie.screeningservice.entity.Address;
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+import com.cg.bookmymovie.screeningservice.service.ScreeningService;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class ServiceTest {
+
+	
+	@Autowired
+	private ScreeningService service;
+	
+	@Test
+	public void addScreeningTest() {
+		Map<String, Double> priceBySeat = new HashMap<String, Double>();
+		priceBySeat.put("front", 100.0);
+		priceBySeat.put("middle", 150.0);
+		priceBySeat.put("back", 200.0);
+		LocalTime movieDuration = LocalTime.of(2,0);
+		Screening screening = new Screening(1,"URI", movieDuration,"thriller","hindi", "abc","Inox",new Address("Maharashtra","mumbai","thane"),"beta",LocalTime.of(10, 30),LocalDate.of(2019, 02, 12),priceBySeat, true);
+	
+	    
+		assertEquals(false,service.addScreening(screening));
+	}
+
+	@Test
+	public void getAllScreeningTest() {
+		assertEquals(1,service.getAllScreenings().size());
+	}
+	
+	@Test
+	public void getScreeningByIdWithValidIdTest() {
+		assertEquals(1,service.getScreeningById(1).get().getScreeningId());
+	}
+	
+	@Test @Ignore
+	public void getScreeningByIdWithInValidIdTest() {
+		assertEquals(10,service.getScreeningById(10).get().getScreeningId());
+	}
+	
+	@Test
+	@Ignore
+	public void deleteSreeningByIdTest() {
+		service.removeScreeningById(2);
+		assertEquals(3,service.getAllScreenings().size());
+	}
+}

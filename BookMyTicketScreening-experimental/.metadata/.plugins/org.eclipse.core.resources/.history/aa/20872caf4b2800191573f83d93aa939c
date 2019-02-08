@@ -1,0 +1,33 @@
+package com.cg.bookmymovie.screeningService;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.repository.ScreeningRepository;
+
+@SpringBootApplication
+public class ScreeningServiceApplication implements CommandLineRunner {
+
+	@Autowired
+	private ScreeningRepository repository;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(ScreeningServiceApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(LocalTime.of(9, 30));
+		System.out.println(LocalDate.of(2019, 02,10));
+		Screening screeningOne = new Screening(1,"golmaal","comedy","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+		repository.save(screeningOne);
+	}
+
+}
+

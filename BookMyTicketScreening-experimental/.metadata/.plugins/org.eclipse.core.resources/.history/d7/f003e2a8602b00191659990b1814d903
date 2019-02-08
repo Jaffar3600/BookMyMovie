@@ -1,0 +1,44 @@
+package com.cg.bookmymovie.websiteService.websiteController;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+
+@RestController
+public class websiteController {
+
+	@Autowired
+	private RestTemplate template;
+
+	@RequestMapping("/name")
+	public ModelAndView home() {
+		System.out.println("hello shubham");
+		return new ModelAndView("hello", "message", "shubham bhatt");
+	}
+
+	@RequestMapping("/cityToSearch")
+	public ModelAndView searchMovieInACity(@RequestParam String city) {
+		
+		List<Screening> allMovieShowingInACity = new ArrayList<Screening>();
+		
+		List<Screening> allScreening = template.getForObject("http://localhost:9090/screenings", List.class);
+		
+		System.out.println(allScreening.get(5).getMovieName());
+		
+		/*
+		 * for(Screening screening : allScreening) { Address address =
+		 * screening.getTheatreAddress(); if (address.getCity().equalsIgnoreCase(city))
+		 * { System.out.println("HII"); allMovieShowingInACity.add(screening); } }
+		 */
+		
+		return new ModelAndView("moviesShowing", "movies", allMovieShowingInACity);
+	}
+}

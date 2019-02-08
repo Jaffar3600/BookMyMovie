@@ -1,0 +1,5 @@
+package com.cg.bookmymovie.screeningservice.resource;
+
+public class ScreeningResource {
+
+}

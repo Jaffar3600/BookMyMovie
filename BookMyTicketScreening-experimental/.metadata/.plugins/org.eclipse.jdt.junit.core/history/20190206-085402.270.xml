@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RestControllerTest" project="screening-service" tests="7" started="7" failures="0" errors="0" ignored="6">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="6.412">
+    <testcase name="noRestControllerTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="getMappingMethodDoesNotExistTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="postMappingMethodExistButWithDbErrorTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="postMappingMethodExistTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="getMappingExistAndReturnsDataTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="postMappingMethodDoesNotExistTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="5.737" ignored="true"/>
+    <testcase name="postMappingMethodExistButInvalidInputScreeningTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.675"/>
+  </testsuite>
+</testrun>

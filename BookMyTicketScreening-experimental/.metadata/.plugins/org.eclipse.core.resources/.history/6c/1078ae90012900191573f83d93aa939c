@@ -1,0 +1,27 @@
+package com.cg.bookmymovie.screeningservice.testRestController;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+import com.cg.bookmymovie.screeningservice.resource.ScreeningResource;
+import com.cg.bookmymovie.screeningservice.service.ScreeningService;
+
+@RunWith(SpringRunner.class)
+@WebMvcTest(value = ScreeningResource.class)
+public class RestControllerTest {
+
+	@Autowired
+	private MockMvc mock;
+	
+	@MockBean
+	private ScreeningService service;
+	
+	Screening screeningOne = new Screening(1,"golmaal","comedy","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+	Screening screeningTwo = new Screening(2,"hunter","horror","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+	
+}

@@ -1,0 +1,61 @@
+package com.cg.bookmymovie.screeningService.resource;
+
+import java.time.temporal.ChronoUnit;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.service.ScreeningServiceImpl;
+
+@RestController("/screenings")
+public class ScreeningResource {
+
+	@Autowired
+	private ScreeningServiceImpl service;
+
+	@PostMapping
+	public String addNewScreening(@RequestBody Screening newScreening) {
+		List<Screening> screeningMovies = service.getScreening(newScreening.getTheatreAddress(),
+				newScreening.getAuditoriumName(), newScreening.getDate());
+
+		if (screeningMovies == null) {
+			service.addScreening(newScreening);
+			return null;
+		} else {
+			for (Screening screening : screeningMovies)
+				if (screening.getStartTime().isBefore((newScreening.getStartTime()).plus(4, ChronoUnit.HOURS)))
+					return "cannot add screening";
+
+			service.addScreening(newScreening);
+			return null;
+		}
+
+	}
+
+	@GetMapping
+	public List<Screening> getScreening() {
+		
+		List<Screening> screens =service.getAllScreenings();
+		for(Screening screen:screens)
+			System.out.println(screen.getAuditoriumName()+ " "+screen.getMovieLanguage());
+		return null;
+	}
+	
+	
+	@PutMapping
+	public void updateShowing(Screening screening) {
+		service.addScreening(screening);
+	}
+	
+	@DeleteMapping("{screeningId}")
+	public void deleteScreening(int screeningId) {
+		service.deleteScreening(screeningId);
+	}
+}

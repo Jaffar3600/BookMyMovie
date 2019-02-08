@@ -1,0 +1,73 @@
+package com.cg.bookmymovie.screeningService.resource;
+
+import java.time.temporal.ChronoUnit;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.service.ScreeningServiceImpl;
+
+@RestController("/screenings")
+public class ScreeningResource {
+
+	@Autowired
+	private ScreeningServiceImpl service;
+
+	@PostMapping
+	public String addNewScreening(@RequestBody Screening newScreening) {
+		List<Screening> screeningMovies = service.getScreening(newScreening.getTheatreAddress(),
+				newScreening.getAuditoriumName(), newScreening.getDate());
+	//	System.out.println(screeningMovies.get(0).getMovieLanguage());
+		
+		
+		
+		Screening testScreens = service.getMyTestScreens(newScreening.getDate());
+		System.out.println(testScreens.getAuditoriumName());
+		
+		
+		
+		if (screeningMovies == null) {
+			service.addScreening(newScreening);
+			System.out.println("screening added");
+			return null;
+		} else {
+			for (Screening screening : screeningMovies)
+				if (screening.getStartTime().isBefore((newScreening.getStartTime()).plus(4, ChronoUnit.HOURS)))
+				{
+					System.out.println("cannot add screening");
+					return "cannot add screening";
+				}
+			service.addScreening(newScreening);
+			System.out.println("screening added after checking time");
+			return null;
+		}
+
+	}
+
+	@GetMapping
+	public List<Screening> getScreening() {
+		
+		List<Screening> screens = service.getAllScreenings();
+		for(Screening screen:screens)
+			System.out.println(screen.getStartTime()+ " "+screen.getDate());
+		return service.getAllScreenings();
+	}
+	
+	
+	@PutMapping
+	public void updateShowing(Screening screening) {
+		service.addScreening(screening);
+	}
+	
+	@DeleteMapping("{screeningId}")
+	public void deleteScreening(int screeningId) {
+		service.deleteScreening(screeningId);
+	}
+}

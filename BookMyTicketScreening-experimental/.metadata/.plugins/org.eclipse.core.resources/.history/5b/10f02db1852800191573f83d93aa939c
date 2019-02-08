@@ -1,0 +1,38 @@
+package com.cg.bookmymovie.screeningservice.testRepository;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.cg.bookmymovie.screeningservice.ScreeningServiceApplicationTests;
+import com.cg.bookmymovie.screeningservice.Repository.ScreeninRespository;
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = { ScreeningServiceApplicationTests.class })
+public class RepositoryTest {
+
+	@Autowired
+	private ScreeninRespository repository;
+
+	@Before
+	public void init() {
+		repository.deleteAll();
+		
+		Screening screeningOne = new Screening(1,"golmaal","comedy","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+		Screening screeningTwo = new Screening(2,"hunter","horror","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+		repository.save(screeningOne);
+		repository.save(screeningTwo);
+	}
+	
+	@Test
+	public void getAllScreenings() {
+		List<Screening> screenings = repository.findAll();
+	}
+}

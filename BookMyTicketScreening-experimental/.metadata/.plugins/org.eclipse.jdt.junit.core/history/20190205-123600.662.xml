@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RestControllerTest" project="screening-service" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="6.686">
+    <testcase name="noRestControllerTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.0" ignored="true"/>
+    <testcase name="getMappingExistButNoDataToReturnTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="6.042" ignored="true"/>
+    <testcase name="getMappingDoesNotExistTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.644"/>
+  </testsuite>
+</testrun>

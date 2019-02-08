@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RepositoryTest" project="screening-service" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testRepository.RepositoryTest" time="0.418">
+    <testcase name="testQueryMethod" classname="com.cg.bookmymovie.screeningservice.testRepository.RepositoryTest" time="0.389"/>
+    <testcase name="getAllScreenings" classname="com.cg.bookmymovie.screeningservice.testRepository.RepositoryTest" time="0.012"/>
+    <testcase name="updateScreening" classname="com.cg.bookmymovie.screeningservice.testRepository.RepositoryTest" time="0.017"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,31 @@
+package com.cg.bookmymovie.websiteService.websiteController;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.ModelAndView;
+
+@RestController
+public class websiteController {
+
+	@Autowired
+	private RestTemplate template;
+
+	@RequestMapping("/name")
+	public ModelAndView home() {
+		System.out.println("hello shubham");
+		return new ModelAndView("hello", "message", "shubham bhatt");
+	}
+
+	@RequestMapping("/cityToSearch")
+	public ModelAndView searchMovieInACity() {
+		System.out.println("hello shubham");
+		ResponseEntity<List> allScreening = template.getForEntity("http://localhost:9090/screenings", List.class);
+		System.out.println(allScreening);
+		return new ModelAndView("hello", "message", "shubham bhatt");
+	}
+}

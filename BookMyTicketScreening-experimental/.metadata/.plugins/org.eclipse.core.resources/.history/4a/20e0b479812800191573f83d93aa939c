@@ -1,0 +1,18 @@
+package com.capgemini.screeningService.repositoryTest;
+
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.capgemini.screeningService.ScreeningServiceApplicationTests;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = { ScreeningServiceApplicationTests.class})
+public class RepositoryTest {
+
+	@Before
+	public void init() {
+		
+	}
+}

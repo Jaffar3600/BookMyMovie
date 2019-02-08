@@ -1,0 +1,5 @@
+package com.cg.bookmymovie.screeningservice.Repository;
+
+public class ScreeninRespository {
+
+}

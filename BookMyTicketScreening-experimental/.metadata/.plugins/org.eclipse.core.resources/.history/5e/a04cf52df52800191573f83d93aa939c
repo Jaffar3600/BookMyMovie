@@ -1,0 +1,65 @@
+package com.cg.bookmymovie.screeningservice.testRepository;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.cg.bookmymovie.screeningservice.Repository.ScreeningRespository;
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+
+/*@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration*/
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class RepositoryTest {
+
+	/*
+	 * @Autowired private ApplicationContext applicationcontext;
+	 */
+	
+	@Autowired
+	private ScreeningRespository repository;
+
+	@Before
+	public void init() {
+		
+		Screening screeningOne = new Screening(1,"golmaal","comedy","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+		Screening screeningTwo = new Screening(2,"hunter","horror","hindi","abc","Inox","mumbai","alpha",LocalTime.of(9,30),LocalDate.of(2019, 02, 10));
+		
+		repository.save(screeningOne);
+		repository.save(screeningTwo);
+		
+		assertNotNull(screeningOne.getAuditoriumName());
+	}
+	
+	@Test
+	public void getAllScreenings() {
+		List<Screening> screenings = repository.findAll();
+		assertEquals(2,screenings.size());
+	}
+	
+	@Test
+	public void updateScreening() {
+		List<Screening> screenings = repository.findAll();
+		screenings.get(0).setMovieLanguage("english");
+		repository.save(screenings.get(0));
+		
+		assertEquals("hindi",repository.findById(1).get().getMovieLanguage());
+	}
+	
+	@After 
+	public void tearDown() {
+		repository.deleteAll();
+	}
+}

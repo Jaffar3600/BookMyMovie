@@ -1,0 +1,72 @@
+package com.cg.bookmymovie.screeningservice.resource;
+
+import java.time.temporal.ChronoUnit;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+import com.cg.bookmymovie.screeningservice.service.ScreeningService;
+
+@RestController("/screenings")
+public class ScreeningResource {
+
+	@Autowired
+	private RestTemplate template;
+
+	@Autowired
+	private ScreeningService service;
+	/*
+	 * @PostMapping public void addScreening(@RequestBody Screening screening) {
+	 * List<Screening> screeningMovies = service.getScreening(screening.getDate(),
+	 * screening.getAuditoriumName(), screening.getTheatreAddress());
+	 * 
+	 * }
+	 */
+
+	@GetMapping /* (produces = "application/json") */
+	public List<Screening> getScreening() {
+
+		List<Screening> screens = service.getAllScreenings();
+		for (Screening screen : screens)
+			System.out.println(screen.getStartTime() + " " + screen.getDate());
+		// return new ResT(null, HttpStatus.OK);
+		return service.getAllScreenings();
+	}
+
+	@PostMapping
+	public String addNewScreening(@RequestBody Screening newScreening) {
+		List<Screening> screeningMovies = service.getScreenings(newScreening.getDate(), newScreening.getAuditoriumName(),
+				newScreening.getTheatreAddress());
+
+		// System.out.println(screeningMovies.get(0).getMovieLanguage());
+		List<Screening> testScreens = service.getScreenings(newScreening.getDate(), newScreening.getAuditoriumName(),
+				newScreening.getTheatreAddress());
+		System.out.println(testScreens.get(0).getAuditoriumName());
+
+		if (screeningMovies == null) {
+			service.addScreening(newScreening);
+			System.out.println("screening added");
+			return null;
+		} else {
+			for (Screening screening : screeningMovies)
+				if (screening.getStartTime().isBefore((newScreening.getStartTime()).plus(4, ChronoUnit.HOURS))) {
+					System.out.println("cannot add screening");
+					return "cannot add screening";
+				}
+			service.addScreening(newScreening);
+			System.out.println("screening added after checking time");
+			return null;
+		}
+
+	}
+
+}

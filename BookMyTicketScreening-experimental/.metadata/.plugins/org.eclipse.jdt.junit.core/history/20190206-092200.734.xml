@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.cg.bookmymovie.screeningservice.testService.ServiceTest" project="screening-service" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.368">
+    <testcase name="addScreeningTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.361"/>
+    <testcase name="getAllScreeningWithMethodReturningVoidTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.007"/>
+  </testsuite>
+</testrun>

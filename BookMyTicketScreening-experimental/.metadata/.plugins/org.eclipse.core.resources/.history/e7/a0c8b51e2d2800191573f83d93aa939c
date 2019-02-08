@@ -1,0 +1,23 @@
+package com.cg.bookmymovie.screeningService.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.service.ScreeningService;
+
+@RestController("/screenings")
+public class ScreeningResource {
+
+	@Autowired
+	private ScreeningService service;
+	
+	@PutMapping
+	public void addNewScreening(@RequestBody Screening screening ) {
+		List<Screening> screeningMovies = service.getScreening(screening.getTheatreAddress(),screening.getAuditoriumName(), screening.getDate());
+	}
+}

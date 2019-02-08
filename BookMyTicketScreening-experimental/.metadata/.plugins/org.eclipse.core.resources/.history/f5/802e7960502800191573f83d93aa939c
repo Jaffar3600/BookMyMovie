@@ -1,0 +1,18 @@
+package com.cg.bookmymovie.screeningService.repository;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+
+@Repository
+public interface ScreeningRepository extends MongoRepository<Screening, Integer> {
+
+	List<Screening> findScreeningByTheatreAddressAndAuditoriumNameAndDate(String theatreAddress, String auditoriumName, LocalDate date);
+
+	List<Screening> findScreeningByDateAndTheatreName(LocalDate date,String tname);
+
+}

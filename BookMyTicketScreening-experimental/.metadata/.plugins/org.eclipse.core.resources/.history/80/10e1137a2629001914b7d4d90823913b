@@ -1,0 +1,131 @@
+package com.cg.bookmymovie.screeningservice.entity;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Screening {
+
+	@Id
+	private int screeningId;
+
+//	private int movieId;
+	private String movieName;
+	private String movieType;
+	private String movieLanguage;
+	private String moviePoster;
+	private String theatreName;
+	private String theatreAddress;
+	private String auditoriumName;
+	private LocalTime startTime;
+	private LocalDate date;
+
+	public Screening(int screeningId, /* int movieId, */ String movieName, String movieType, String movieLanguage,
+			String moviePoster, String theatreName, String theatreAddress, String auditoriumName, LocalTime startTime,
+			LocalDate date) {
+		super();
+		this.screeningId = screeningId;
+		/* this.movieId = movieId; */
+		this.movieName = movieName;
+		this.movieType = movieType;
+		this.movieLanguage = movieLanguage;
+		this.moviePoster = moviePoster;
+		this.theatreName = theatreName;
+		this.theatreAddress = theatreAddress;
+		this.auditoriumName = auditoriumName;
+		this.startTime = startTime;
+		this.date = date;
+	}
+
+	public Screening() {
+	}
+
+	public int getScreeningId() {
+		return screeningId;
+	}
+
+	public void setScreeningId(int screeningId) {
+		this.screeningId = screeningId;
+	}
+
+	/*
+	 * public int getMovieId() { return movieId; }
+	 * 
+	 * public void setMovieId(int movieId) { this.movieId = movieId; }
+	 */
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+
+	public String getMovieType() {
+		return movieType;
+	}
+
+	public void setMovieType(String movieType) {
+		this.movieType = movieType;
+	}
+
+	public String getMovieLanguage() {
+		return movieLanguage;
+	}
+
+	public void setMovieLanguage(String movieLanguage) {
+		this.movieLanguage = movieLanguage;
+	}
+
+	public String getMoviePoster() {
+		return moviePoster;
+	}
+
+	public void setMoviePoster(String moviePoster) {
+		this.moviePoster = moviePoster;
+	}
+
+	public String getTheatreName() {
+		return theatreName;
+	}
+
+	public void setTheatreName(String theatreName) {
+		this.theatreName = theatreName;
+	}
+
+	public String getTheatreAddress() {
+		return theatreAddress;
+	}
+
+	public void setTheatreAddress(String theatreAddress) {
+		this.theatreAddress = theatreAddress;
+	}
+
+	public String getAuditoriumName() {
+		return auditoriumName;
+	}
+
+	public void setAuditoriumName(String auditoriumName) {
+		this.auditoriumName = auditoriumName;
+	}
+
+	public LocalTime getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(LocalTime startTime) {
+		this.startTime = startTime;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+}

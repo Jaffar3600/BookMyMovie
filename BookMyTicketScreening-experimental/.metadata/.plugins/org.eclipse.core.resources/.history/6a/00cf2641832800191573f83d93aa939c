@@ -1,0 +1,7 @@
+package com.cg.bookmymovie.screeningservice.Repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ScreeninRespository extends MongoRepository<Screening, Integer>{
+
+}

@@ -1,0 +1,51 @@
+package com.cg.bookmymovie.screeningService.entity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Map;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.mongodb.internal.connection.Time;
+
+@Document
+public class Screening {
+
+	@Id
+	private int screeningId;
+	
+	private int movieId;
+	private String movieName;
+	private String movieType;
+	private String movieLanguage;
+	private String moviePoster;
+	private String theatreName;
+	private String theatreAddress;
+	private String auditoriumName;
+	private Time startTime;
+	private LocalDate date;
+	
+	public Screening(int screeningId, int movieId, String movieName, String movieType, String movieLanguage,
+			String moviePoster, String theatreName, String theatreAddress, String auditoriumName, Time startTime,
+			LocalDate date) {
+		super();
+		this.screeningId = screeningId;
+		this.movieId = movieId;
+		this.movieName = movieName;
+		this.movieType = movieType;
+		this.movieLanguage = movieLanguage;
+		this.moviePoster = moviePoster;
+		this.theatreName = theatreName;
+		this.theatreAddress = theatreAddress;
+		this.auditoriumName = auditoriumName;
+		this.startTime = startTime;
+		this.date = date;
+	}
+
+	public Screening() {
+	}
+	
+	
+	
+}

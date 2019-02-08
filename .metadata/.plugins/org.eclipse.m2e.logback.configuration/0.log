@@ -1,0 +1,141 @@
+2019-02-08 14:24:36,926 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-02-08 14:25:25,556 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.book-my-movie:screening-service:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\screening-service\pom.xml.
+2019-02-08 14:25:27,428 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /screening-service/src/main/java
+2019-02-08 14:25:27,429 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /screening-service/src/main/resources
+2019-02-08 14:25:27,436 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /screening-service/src/main/resources
+2019-02-08 14:25:27,442 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /screening-service/src/test/java
+2019-02-08 14:25:27,829 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2019-02-08 14:25:30,188 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:30,195 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:25:30,227 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:30,229 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:30,229 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\screening-service\src\test\resources
+2019-02-08 14:25:33,196 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:33,197 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:33,197 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:33,199 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:33,199 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\screening-service\src\test\resources
+2019-02-08 14:25:39,394 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.book-my-movie:websiteService:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\websiteService\pom.xml.
+2019-02-08 14:25:39,914 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /websiteService/src/main/java
+2019-02-08 14:25:39,915 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /websiteService/src/main/resources
+2019-02-08 14:25:39,923 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /websiteService/src/main/resources
+2019-02-08 14:25:39,930 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /websiteService/src/test/java
+2019-02-08 14:25:40,108 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2019-02-08 14:25:41,088 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:41,089 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:25:41,091 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:41,093 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:41,094 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\websiteService\src\test\resources
+2019-02-08 14:25:50,689 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:50,690 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:50,690 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:25:50,692 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:25:50,692 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\BookMyTicketScreening-experimental\websiteService\src\test\resources
+2019-02-08 14:26:36,446 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.bookmymovie.ewallet:ewallet:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\ewallet\pom.xml.
+2019-02-08 14:26:37,138 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ewallet/src/main/java
+2019-02-08 14:26:37,139 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ewallet/src/main/resources
+2019-02-08 14:26:37,139 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ewallet/src/main/resources
+2019-02-08 14:26:37,139 [Worker-10: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ewallet/src/test/java
+2019-02-08 14:26:37,276 [Worker-10: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2019-02-08 14:26:38,461 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:26:38,462 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:26:38,464 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:26:38,484 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:26:38,485 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\ewallet\src\test\resources
+2019-02-08 14:26:50,205 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.bookmymovie.ewallet.website:ewalletwebsite:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\ewalletwebsite\pom.xml.
+2019-02-08 14:26:50,656 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ewalletwebsite/src/main/java
+2019-02-08 14:26:50,658 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ewalletwebsite/src/main/resources
+2019-02-08 14:26:50,658 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ewalletwebsite/src/main/resources
+2019-02-08 14:26:50,659 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ewalletwebsite/src/test/java
+2019-02-08 14:26:50,739 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-02-08 14:26:51,950 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:26:51,951 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:26:51,954 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:26:51,956 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:26:51,956 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\ewalletwebsite\src\test\resources
+2019-02-08 14:27:17,819 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.bookmymovie.movie:movie:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\movie\pom.xml.
+2019-02-08 14:27:18,473 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie/src/main/java
+2019-02-08 14:27:18,473 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie/src/main/resources
+2019-02-08 14:27:18,477 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie/src/main/resources
+2019-02-08 14:27:18,482 [Worker-3: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie/src/test/java
+2019-02-08 14:27:18,678 [Worker-3: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2019-02-08 14:27:19,698 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:27:19,699 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:27:19,701 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:27:19,703 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:27:19,703 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\movie\src\test\resources
+2019-02-08 14:27:21,016 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:27:21,017 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:27:21,017 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:27:21,023 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:27:21,023 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\movie\src\test\resources
+2019-02-08 14:27:53,182 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cg.bookmymovie:theatreService:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\SpringTdd\theatreService\theatreService\pom.xml.
+2019-02-08 14:27:54,972 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0.pom
+2019-02-08 14:27:55,320 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0.pom
+2019-02-08 14:27:55,662 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-parent/2.8.0/rest-assured-parent-2.8.0.pom
+2019-02-08 14:27:55,987 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-parent/2.8.0/rest-assured-parent-2.8.0.pom
+2019-02-08 14:27:56,329 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0.pom
+2019-02-08 14:27:56,589 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0.pom
+2019-02-08 14:27:56,931 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0.pom
+2019-02-08 14:27:57,178 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0.pom
+2019-02-08 14:27:57,527 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0.pom
+2019-02-08 14:27:57,794 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0.pom
+2019-02-08 14:27:58,126 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0.jar
+2019-02-08 14:27:58,891 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0.jar
+2019-02-08 14:27:59,100 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0.jar
+2019-02-08 14:27:59,395 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0.jar
+2019-02-08 14:27:59,627 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0.jar
+2019-02-08 14:27:59,810 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0.jar
+2019-02-08 14:28:00,060 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0.jar
+2019-02-08 14:28:00,386 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0.jar
+2019-02-08 14:28:00,777 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /theatreService/src/main/java
+2019-02-08 14:28:00,778 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /theatreService/src/main/resources
+2019-02-08 14:28:00,782 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /theatreService/src/main/resources
+2019-02-08 14:28:00,787 [Worker-8: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /theatreService/src/test/java
+2019-02-08 14:28:01,020 [Worker-8: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2019-02-08 14:28:01,901 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:01,901 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:28:01,903 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:01,905 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:01,905 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\SpringTdd\theatreService\theatreService\src\test\resources
+2019-02-08 14:28:02,903 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0-sources.jar
+2019-02-08 14:28:03,224 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:03,224 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:03,225 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:03,226 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:03,227 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\SpringTdd\theatreService\theatreService\src\test\resources
+2019-02-08 14:28:03,637 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured/2.8.0/rest-assured-2.8.0-sources.jar
+2019-02-08 14:28:03,677 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:rest-assured:2.8.0
+2019-02-08 14:28:03,911 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0-sources.jar
+2019-02-08 14:28:04,160 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/json-path/2.8.0/json-path-2.8.0-sources.jar
+2019-02-08 14:28:04,199 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:json-path:2.8.0
+2019-02-08 14:28:04,472 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0-sources.jar
+2019-02-08 14:28:04,734 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/rest-assured-common/2.8.0/rest-assured-common-2.8.0-sources.jar
+2019-02-08 14:28:04,769 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:rest-assured-common:2.8.0
+2019-02-08 14:28:05,062 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0-sources.jar
+2019-02-08 14:28:05,231 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/jayway/restassured/xml-path/2.8.0/xml-path-2.8.0-sources.jar
+2019-02-08 14:28:05,299 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:xml-path:2.8.0
+2019-02-08 14:28:05,303 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:rest-assured:2.8.0
+2019-02-08 14:28:05,305 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:json-path:2.8.0
+2019-02-08 14:28:05,308 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:rest-assured-common:2.8.0
+2019-02-08 14:28:05,310 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.jayway.restassured:xml-path:2.8.0
+2019-02-08 14:28:05,654 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:05,655 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:05,655 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:05,657 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:05,657 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Properties-Application-master\SpringTdd\theatreService\theatreService\src\test\resources
+2019-02-08 14:28:43,148 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bookyourticket:profile:0.0.1-SNAPSHOT @ C:\Users\jaffshai\Desktop\BookMyMovie\Project-master\profile\profile\pom.xml.
+2019-02-08 14:28:43,675 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /profile/src/main/java
+2019-02-08 14:28:43,676 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /profile/src/main/resources
+2019-02-08 14:28:43,680 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /profile/src/main/resources
+2019-02-08 14:28:43,688 [Worker-7: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /profile/src/test/java
+2019-02-08 14:28:43,851 [Worker-7: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-02-08 14:28:44,607 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:44,607 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-02-08 14:28:44,609 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:44,611 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:44,612 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jaffshai\Desktop\BookMyMovie\Project-master\profile\profile\src\test\resources
+2019-02-08 14:28:45,848 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-02-08 14:28:45,848 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:45,849 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-02-08 14:28:45,851 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

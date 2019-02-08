@@ -1,0 +1,38 @@
+package com.cg.bookmymovie.screeningservice.testService;
+
+import static org.junit.Assert.assertEquals;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+import com.cg.bookmymovie.screeningservice.service.ScreeningService;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class ServiceTest {
+
+	
+	@Autowired
+	private ScreeningService service;
+	
+	@Test
+	public void getAllScreeningWithMethodReturningVoidTest() {
+		assertEquals(2,service.getAllScreenings().size());
+	}
+	
+	@Test
+	public void addScreeningTest() {
+		Screening screening = new Screening(2,"Stri","Thriller And Comedy","hindi", "xyz","ESQUARE","Jaipur","gamma",LocalTime.of(10, 30),LocalDate.of(2019, 02, 12));
+
+		assertEquals(2,service.getAllScreenings().size());
+	}
+}

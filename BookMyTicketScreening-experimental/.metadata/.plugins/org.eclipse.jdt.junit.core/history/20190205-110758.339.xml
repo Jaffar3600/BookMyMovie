@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" project="screening-service" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="6.766">
+    <testcase name="testGetEmployeeByIdThatDoesNotExist" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="6.149" ignored="true"/>
+    <testcase name="nomappingPresentTest" classname="com.cg.bookmymovie.screeningservice.testRestController.RestControllerTest" time="0.617"/>
+  </testsuite>
+</testrun>

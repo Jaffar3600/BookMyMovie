@@ -1,0 +1,100 @@
+package com.cg.bookmymovie.screeningservice.testRestController;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
+
+import java.net.URISyntaxException;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class RestControllerTest {
+
+	private Screening screening;
+	
+	@Autowired
+	private TestRestTemplate testRestTemplate;
+
+	@LocalServerPort
+	int randomServerPort;
+
+	@Before
+	public void setUp() {
+		screening = new Screening(3,"hunter","horror","hindi", "abc","Inox","mumbai","alpha",LocalTime.of(10, 30),LocalDate.of(2019, 02, 12));
+	}
+
+	@Test
+	public void noRestControllerTest() throws Exception {
+
+		ResponseEntity<List> responseEntity = testRestTemplate.getForEntity("/screenings", List.class);
+
+		assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
+	}
+
+	@Test
+	@Ignore
+	public void getMappingMethodDoesNotExistTest() throws Exception {
+
+		ResponseEntity<Resource> responseEntity = testRestTemplate.getForEntity("/screenings", Resource.class);
+
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@Test
+	@Ignore
+	public void getMappingMethodExistButReturnsNullTest() throws Exception {
+
+		ResponseEntity<Resource> responseEntity = testRestTemplate.getForEntity("/screenings", Resource.class);
+
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@Test
+	public void getMappingExistAndReturnsDataTest() throws URISyntaxException {
+
+		ResponseEntity<List> responseEntity = testRestTemplate.getForEntity("/screenings", List.class);
+
+		// assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+
+		/*
+		 * RestTemplate restTemplate = new RestTemplate();
+		 * 
+		 * final String baseUrl = "http://localhost:" + randomServerPort +
+		 * "/screenings"; URI uri = new URI(baseUrl);
+		 * 
+		 * ResponseEntity<List> result = restTemplate.getForEntity(uri, List.class);
+		 * 
+		 */ // Verify request succeed
+
+		Assert.assertEquals(200, responseEntity.getStatusCodeValue());
+		// Assert.assertEquals(true, result.getBody().contains("employeeList"));
+	}
+
+	@Test
+	public void postMappingMethodDoesNotExistTest() throws Exception {
+
+		ResponseEntity responseEntity = testRestTemplate.postForEntity("/screenings", screening, null);
+
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+}

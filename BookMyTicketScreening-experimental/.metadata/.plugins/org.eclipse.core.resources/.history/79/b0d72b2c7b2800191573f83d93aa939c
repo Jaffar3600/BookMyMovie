@@ -1,0 +1,5 @@
+package com.capgemini.screeningService.repository;
+
+public interface ScreeningRepository {
+
+}

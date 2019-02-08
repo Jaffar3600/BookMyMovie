@@ -1,0 +1,48 @@
+package com.cg.bookmymovie.screeningService.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.repository.ScreeningRepository;
+
+@Service
+public class ScreeningServiceImpl implements ScreeningService {
+
+	@Autowired
+	private ScreeningRepository repository;
+	
+	
+	@Override
+	public List<Screening> getScreening(String theatreAddress, String auditoriumName, LocalDate date) {
+		
+		repository.findScreeningByTheatreAddressAndAuditoriumNameAndDate(theatreAddress, auditoriumName, date);
+		return null;
+	}
+
+	@Override
+	public void addScreening(Screening screening) {
+		repository.save(screening);
+	}
+
+	
+	@Override
+	public List<Screening> getAllScreenings() {
+		return repository.findAll();
+	}
+
+	@Override
+	public void deleteScreening(int screeningId) {
+		repository.deleteById(screeningId);;
+	}
+
+	public Screening getMyTestScreens(LocalDate date) {
+		return null;
+	}
+	
+	
+
+}

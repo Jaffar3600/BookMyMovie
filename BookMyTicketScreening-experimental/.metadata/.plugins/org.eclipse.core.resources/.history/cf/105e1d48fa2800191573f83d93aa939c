@@ -1,0 +1,5 @@
+package com.cg.bookmymovie.screeningservice.testRestController;
+
+public class RestControllerTest {
+
+}

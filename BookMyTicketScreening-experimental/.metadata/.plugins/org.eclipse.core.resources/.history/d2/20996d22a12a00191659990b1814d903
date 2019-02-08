@@ -1,0 +1,24 @@
+package com.cg.bookmymovie.screeningservice.service;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+import java.util.Optional;
+
+import com.cg.bookmymovie.screeningservice.entity.Screening;
+
+public interface ScreeningService {
+
+//	List<Screening> getScreenings(Address theatreAddress, String theatreName, String auditoriumName, LocalDate date);
+
+	List<Screening> getAllScreenings();
+
+	boolean addScreening(Screening newScreening);
+
+	boolean removeScreeningById(int screeningId);
+
+	Optional<Screening> getSpecificScreening(String theatreName, String auditoriumName, LocalDate date, LocalTime time);
+
+	boolean updateScreening(int screeningId, boolean showing);
+
+}

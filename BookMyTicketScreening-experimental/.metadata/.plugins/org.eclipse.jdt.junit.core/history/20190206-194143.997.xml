@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ServiceTest" project="screening-service" tests="5" started="5" failures="0" errors="0" ignored="3">
+  <testsuite name="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="5.992">
+    <testcase name="addScreeningSuccessfullyTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.0" ignored="true"/>
+    <testcase name="getAllScreeningTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.0" ignored="true"/>
+    <testcase name="deleteSreeningByIdWhenScreeningToRemoveExistTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="5.629" ignored="true"/>
+    <testcase name="addScreeningFailedTest" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.334"/>
+    <testcase name="deleteScreeningByIdWhenScreeningToRemoveNotExist" classname="com.cg.bookmymovie.screeningservice.testService.ServiceTest" time="0.029"/>
+  </testsuite>
+</testrun>

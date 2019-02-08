@@ -1,0 +1,19 @@
+package com.cg.bookmymovie.screeningService.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cg.bookmymovie.screeningService.entity.Screening;
+import com.cg.bookmymovie.screeningService.repository.ScreeningRepository;
+
+public class ScreeningService {
+
+	@Autowired
+	private ScreeningRepository repository;
+	
+	public Screening getScreening(String theatreAddress, String auditoriumName) {
+		
+		repository.findByScreeningTheatreAddressAndAuditoriumName(theatreAddress, auditoriumName);
+		return null;
+	}
+
+}

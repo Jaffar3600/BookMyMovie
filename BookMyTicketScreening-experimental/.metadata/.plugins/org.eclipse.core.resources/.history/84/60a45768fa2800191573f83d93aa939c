@@ -1,0 +1,5 @@
+package com.cg.bookmymovie.screeningservice.service;
+
+public class ScreeningServiceImpl implements ScreeningService{
+
+}

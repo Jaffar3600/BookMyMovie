@@ -1,0 +1,9 @@
+package com.cg.bookmymovie.screeningservice.entity;
+
+public class Address {
+
+	private String state;
+	private String city;
+	private String street;
+	private int pincode;
+}

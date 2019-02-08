@@ -1,0 +1,9 @@
+package com.capgemini.screeningService.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.capgemini.screeningService.entity.Screening;
+
+public interface ScreeningRepository extends MongoRepository<Screening, Integer> {
+
+}
